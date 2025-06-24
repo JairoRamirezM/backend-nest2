@@ -18,11 +18,11 @@ export class OperacionesController {
     if (calculo) {
       return res
         .status(200)
-        .json({ resultado: calculo, mensaje: 'operacion exitosa' });
+        .json({ resultado: calculo, mensaje: 'operacion ' + operacion + ' exitosa' });
     }
 
     return res
       .status(502)
       .json({ resultado: NaN, mensaje: 'operacion no pudo ser calculada' });
-  }
+    }
 }
