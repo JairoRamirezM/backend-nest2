@@ -19,4 +19,3 @@ services:
       - db_data_cmd:/var/lib/mysql
 volumes:
   db_data_cmd:
-
